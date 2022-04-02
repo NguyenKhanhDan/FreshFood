@@ -1,0 +1,335 @@
+.toanbo {
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    margin-top: -10px;
+    height: 100px;
+}
+
+.logo {
+    width: 10%;
+    margin-left: 30px;
+}
+
+nav ul li a:hover {
+    color: #379bf1;
+    text-decoration: underline;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #707071;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 40px;
+    padding-left: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul ul {
+    position: absolute;
+    display: none;
+    padding: 0;
+    margin-top: 0px;
+    margin-left: -20px;
+    list-style: none;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    width: 140px;
+    background-color: white;
+    height: 123px;
+    line-height: 30px;
+    text-align: center;
+}
+
+nav ul ul a {
+    display: block;
+    line-height: 30px;
+    color: #707071;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0 auto;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul ul a:hover {
+    color: #379bf1;
+    background-color: #eff1f4;
+    width: 120px;
+}
+
+nav .timKiem {
+    margin-top: 35px;
+    margin-right: 100px;
+}
+
+nav .timKiem input {
+    height: 25px;
+    width: 250px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.nav-2 ul li a {
+    font-size: x-large;
+    text-decoration: none;
+    margin: 30px;
+    color: black;
+}
+
+.nav-2 ul li {
+    list-style-type: none;
+}
+
+.nav-2 ul {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.nav-2 {
+    margin-top: -30px;
+    font-size: 20px;
+    background-color: #eff1f4;
+}
+
+.nav-2 ul li a:hover {
+    color: #3a9cf1;
+}
+
+
+/*Sản phẩm*/
+
+#products h1 {
+    margin-left: 27%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+#products {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#products .item-thumb img {
+    width: 100%;
+}
+
+#products .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#products .items .item {
+    border: 1px solid #ddd;
+    box-shadow: 1px 2px 4px #ddd;
+    border-radius: 5px;
+}
+
+#products .items .item .item-title {
+    margin: 10px 10px 10px 20px;
+}
+
+#products .items .item .item-price {
+    font-size: 16px;
+    margin: 10px 10px 10px 20px;
+}
+
+.btn-primary {
+    background-color: #379bf1;
+    color: white;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 10px 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #57606f;
+}
+
+#products .items .item .btn {
+    margin-left: auto;
+    display: block;
+}
+
+
+/*Sản phẩm*/
+
+
+/* Giỏ hàng */
+
+.cart {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 4px #ddd;
+    padding: 20px;
+}
+
+.cart i .fas.fa-times {
+    cursor: pointer;
+}
+
+.cart h2 {
+    margin-bottom: 20px;
+}
+
+.cart table {
+    width: 100%;
+}
+
+.cart tbody tr td {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart tbody tr td i:hover {
+    color: red;
+}
+
+.cart button {
+    background-color: #379bf1;
+    color: white;
+    text-align: right;
+    height: 30px;
+    padding: 0 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.cart button:hover {
+    box-shadow: 0 0 5px #707071;
+}
+
+
+/* Giỏ hàng */
+
+
+/* Cho giỏ hàng xuất hiện bên trái */
+
+.cart {
+    position: fixed;
+    height: 100%;
+    width: 400px;
+    right: 0;
+    top: 90px;
+    background-color: rgb(233, 233, 233);
+    padding: 12px 20px;
+    overflow-y: scroll;
+    right: -100%;
+    transition: all 0.3s ease;
+}
+
+
+/* Cho giỏ hàng xuất hiện bên trái */
+
+.d-flex1 {
+    background-color: #379bf1;
+    color: white;
+    line-height: 25px;
+    height: 100px;
+}
+
+.d-flex1 .me-5 {
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+.d1 img {
+    width: 30%;
+}
+
+.top {
+    display: flex;
+}
+
+.top .ten {
+    font-size: 18px;
+    margin-top: 35px;
+    font-weight: bold;
+    color: #57606f;
+}
+
+.footer {
+    display: flex;
+    padding-left: 100px;
+}
+
+.d1,
+.d2,
+.d3,
+.d4 {
+    width: 30%;
+}
+
+.d2 p a,
+.d3 p a {
+    text-decoration: none;
+    color: #747d8c;
+}
+
+.d2 p a:hover,
+.d3 p a:hover {
+    color: #3a9cf1;
+}
+
+.d1 {
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.d1 .camKet,
+.d4 p {
+    color: #747d8c;
+}
+
+.d2 .td,
+.d3 .td,
+.d4 .td {
+    font-size: 18px;
+    color: #57606f;
+    margin-bottom: -5px;
+}
+
+.d2 {
+    padding-left: 100px;
+}

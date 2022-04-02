@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí</title>
+    <script src="https://kit.fontawesome.com/f20d460fd9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/dang_ki.css">
+
+</head>
+
+<body>
+    <!--nav-1-->
+    <nav>
+        <img class="logo" src="images/logo.png">
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioi_thieu.html">Giới thiệu</a></li>
+            <li><a href="san_pham.html" style="padding-bottom: 10px;">Sản phẩm</a>
+                <ul>
+                    <li>
+                        <a href="sanpham/rau-qua.html">Rau củ - quả</a>
+                    </li>
+                    <li>
+                        <a href="sanpham/haisan.html">Hải sản</a>
+                    </li>
+                    <li>
+                        <a href="sanpham/thitbo.html">Thịt bò</a>
+                    </li>
+                    <li>
+                        <a href="sanpham/thitheo.html">Thịt heo</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="tu_van.html">Tư vấn</a></li>
+            <li><a href="lien_he.html">Liên hệ</a></li>
+            <li><a href="#" style="padding-bottom: 10px;">Tài khoản</a>
+                <ul>
+                    <li>
+                        <a href="dang_nhap.html">Đăng nhập</a>
+                    </li>
+                    <li>
+                        <a href="dang_ki.html">Đăng ký</a>
+                    </li>
+                    <li>
+                        <a href="#">Đăng xuất</a>
+                    </li>
+                    <li>
+                        <a class="cart-icon"><i class="fas fa-shopping-cart"> <span>0</span><span>đ</span> </i></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="timKiem">
+            <input type="text" placeholder="Tìm kiếm">
+        </div>
+    </nav>
+    <!--nav-1-->
+
+    <!--banner-->
+    <div id="content">
+        <div class="banner">
+            <img src="images/banner1.png">
+        </div>
+    </div>
+    <!--banner-->
+
+    <!--nav-2-->
+    <div class="nav-2">
+        <ul>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Triết lí kinh doanh</a></li>
+            <li><a href="#">Vị trí cửa hàng</a></li>
+        </ul>
+    </div>
+    <!--nav-2-->
+
+    <!--sign up-->
+    <section class="tb" style="width: 50%">
+        <div class="left">
+            <div class="TD">Đăng kí</div>
+            <form id="form" action="#" method="post" style="padding-left: 5%;">
+                <div class="form-outline">
+                    <label class="form-label">Email:</label> <br>
+                    <input id="fullName" type="email" class="form-control" placeholder="abc@gmail.com.vn" />
+                    <span id="errorName" style="color: red;"></span>
+                </div>
+                <div class="form-outline">
+                    <label class="form-label">Tên đăng nhập:</label> <br>
+                    <input id="user" type="text" class="form-control" />
+                    <span id="erroruser" style="color: red;"></span>
+                </div>
+                <div class="form-outline">
+                    <label class="form-label">Mật khẩu:</label> <br>
+                    <input id="pass" type="password" class="form-control" />
+                    <span id="errorpass" style="color: red;"></span>
+                </div>
+                <div class="form-outline">
+                    <label class="form-label">Nhắc lại mật khẩu:</label> <br>
+                    <input id="rePass" type="password" class="form-control" />
+                    <span id="errorrePass" style="color: red;"></span>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label">
+                        Tôi đồng ý với các <a href="https://policies.google.com/terms?hl=en&gl=VN">Điều khoản dịch vụ</a>
+                    </label>
+                </div>
+                <div class="dk">
+                    <button id="dk" class="btn" type="button" onclick="kt()">Đăng kí</button>
+                </div>
+                <div class="d-flex">
+                    <span class="mb-0 ">Đã có tài khoản?</span>
+                    <a href="dang_nhap.html">Đăng nhập</a>
+                </div>
+
+            </form>
+            <script src="js/dang_ki.js"></script>
+        </div>
+    </section>
+    <!--sign up-->
+    <!-- Giỏ hàng -->
+    <section class="cart">
+        <i style="margin-left: -350px; margin-top: 20px" class="fas fa-times"></i>
+        <h2>GIỎ HÀNG</h2>
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Xóa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Hiển thị ds sản phẩm trong giỏ hàng -->
+                </tbody>
+            </table>
+            <div style="text-align: right;" class="price-total">
+                <p style="font-weight: bold; color: red;">Tổng tiền: <span>0</span><span>đ</span> </p>
+            </div>
+            <button onclick="checkout()">Thanh toán</button>
+            <p style="color: red;">Vui lòng đặt hàng và thanh toán sản phẩm theo từng loại ngay tại trang này</p>
+            <p style="color: red;">Xin cảm ơn!</p>
+        </form>
+    </section>
+    <script src="js/gio-hang.js"></script>
+    <!-- Giỏ hàng -->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex1 justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span><b>TRỤ SỞ CHÍNH:</b></span>
+                <p>Đường Nguyễn Văn Cừ, khu vực 1, Ninh Kiều, Cần Thơ</p>
+            </div>
+            <!-- Left -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="footer">
+            <div class="d1">
+                <div class="top">
+                    <img src="images/logo.png">
+                    <div class="ten"><i>FRESH FOOD</i></div>
+                </div>
+                <p class="camKet" style="text-align: justify;">
+                    Fresh Food cam kết cung cấp nguồn thực phẩm an toàn, chất lượng với giá trị dinh dưỡng cao và tiện lợi nhằm mang đến cuộc sống tốt đẹp hơn, phong phú hơn cho cộng đồng.
+                </p>
+            </div>
+            <div class="d2">
+                <!-- Links -->
+                <h6 class="td">
+                    SẢN PHẨM
+                </h6>
+                <p>
+                    <a href="./sanpham/rau-qua.html" class="text-reset">Rau củ - Quả</a>
+                </p>
+                <p>
+                    <a href="./sanpham/thitheo.html" class="text-reset">Thịt heo</a>
+                </p>
+                <p>
+                    <a href="./sanpham/thitbo.html" class="text-reset">Thịt bò</a>
+                </p>
+                <p>
+                    <a href="./sanpham/haisan.html" class="text-reset">Hải sản</a>
+                </p>
+            </div>
+            <div class="d3">
+                <!-- Links -->
+                <h6 class="td">
+                    CÁC TIỆN ÍCH
+                </h6>
+                <p>
+                    <a href="lien_he.html" class="text-reset">Đánh giá</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-reset">Cài đặt</a>
+                </p>
+                <p>
+                    <a href="gio_hang.html" class="text-reset">Đơn hàng</a>
+                </p>
+                <p>
+                    <a href="tu_van.html" class="text-reset">Trợ giúp</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="d4">
+                <!-- Links -->
+                <h6 class="td">
+                    LIÊN HỆ
+                </h6>
+                <p>Địa chỉ: Thới Lai, Cần Thơ</p>
+                <p>
+                    Email: Dannkpc04351@fpt.edu
+                </p>
+                <p>
+                    SĐT: + 01 234 567 88</p>
+                <p>
+                    FAX: 0272 3870 366</p>
+            </div>
+        </section>
+        <!-- Section: Links  -->
+    </footer>
+    <!-- Footer -->
+    <script src="https://uhchat.net/code.php?f=c06179 "></script>
+</body>
+
+</html>
